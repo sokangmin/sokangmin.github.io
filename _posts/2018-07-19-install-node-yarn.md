@@ -1,4 +1,5 @@
 ---
+published: true
 title: 간단하게 Node.js, npm, yarn 설치하기
 date: 2018-01-29 23:55:00 +0900
 tags:
