@@ -1,9 +1,9 @@
 ---
-title: 자바스크립트 프로토타입(Prototype)
-date: 2017-04-18
-category: javascript
+title: 포스트 프로토타입(sample)
+date: 2018-07-19
+category: sample
 tags: 
-  - javascript
+  - sample
 ---
 
 자바스크립트에서 모든 객체는 자신의 부모 객체와 연결 되어있다.  
@@ -13,9 +13,10 @@ tags:
 
 생성된 객체의 실제 부모 역활을 하는 건 생성자 자신이 아닌 생성자의 prototype 프로퍼티가 가리키는 프로토타입 객체이다.
 
-## Prototype?
+## [대제목] Prototype?
 
 ```js
+코드 넣는 부분
 function Person(name){
     this.name = name;
 }
@@ -27,7 +28,7 @@ Person() 생성자로 생성된 객체 foo는,
 Person() 함수의 프로토타입 객체를 [[Prototype]]Link로 연결한다.  
 
 
-### 프로토타입 체이닝
+### [소제목] 프로토타입 체이닝
 특정 객체의 프로퍼티나 메서드에 접근하려 할 때, 해당 객체에 접근하려고 하는 프로퍼티나 메서드가 없다면 [[Prototype]]Link를 따라 자신의 부모 방향으로 프로토타입 객체의 프로퍼티를 차례대로 검사하는 것을 말한다.  
 즉, 프로토타입 체이닝을 통해 자신이 아닌 부모의 프로토타입 객체 프로퍼티에도 접근이 가능.  
 
@@ -35,7 +36,7 @@ Person() 함수의 프로토타입 객체를 [[Prototype]]Link로 연결한다.
 Object가 갖고 있는 prototype 프로퍼티가 가리키는 프로토타입 객체인 Object.prototype 객체를 자신의 프로토타입 객체로 연결한다.
 
 
-```js
+```java
 //...위의 예제 코드...
 console.log(foo.hasOwnProperty('name'));
 ```
